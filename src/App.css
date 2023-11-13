@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Agbalumo;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* CSS FOR APP */
+
+#body {
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#container {
+    background-color: #22303C;
+    color: white;
+    height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* CSS FOR NAVBAR */
+
+#logo p {
+    font-family: Agbalumo;
+    font-size: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.nav_links {
+    display: flex;
+    justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav_links li {
+    list-style: none;
+}
+
+.your-link-class {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    font-family: Agbalumo;
+}
+
+.your-link-class::after {
+    content: '';
+    display: block;
+    background: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+    transition: width 0.3s ease;
+    width: 0;
+}
+
+
+.your-link-class:hover::after {
+    width: 100%;
+    height: 2%;
+}
+
+/* CSS FOR HOME */
+
+#home_container {
+    margin-top: 10vh;
+}
+
+#home_container h1 {
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+#home_container span {
+    color: #c471ed;
+}
+
+.vertical-line {
+    border-radius: 15px;
+    /* background-color: #a339d7; */
+    /* border: 2px solid white; */
+    height: 30vh;
+    width: 2.27%;
+}
+
+.vertical-line div {
+    border-radius: 45px;
+    background-color: #c471ed;
+    /* background-color: white; */
+    width: 20px;
+    height: 50px;
+    position: relative;
+    animation: moveDown 3s ease-in-out infinite;
+    /* animation: moveUp 3s ease-in infinite; */
+}
+
+@keyframes moveDown {
+    from {
+        top: 0;
+
+    }
+
+    to {
+        top: 200px;
+    }
+}
+
+/* About css */
+#about_container h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    /* font-family: Agbalumo; */
+}
+
+#about_container h2 {
+    color: yellow;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Agbalumo;
+}
+
+#about_container p {
+    font-size: 2rem;
+}
+
+#about_container span {
+    color: #c471ed;
+}
+
+
+/* Conatct page css */
+#contact_card {
+    margin: auto;
+    /* background-color: #c471ed; */
+    color: white;
+    /* border: 2px solid red; */
+    width: 25vw;
+    height: 30vh;
+}
+
+#contact_container p {
+    font-size: 2rem;
 }
