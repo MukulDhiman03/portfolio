@@ -3,13 +3,16 @@ import MailIcon from "@mui/icons-material/Mail";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import FreeBreakfastIcon from "@mui/icons-material/FreeBreakfast";
+import Button from "@mui/material/Button";
+
 const Contact = () => {
   return (
     <div className="container" id="contact_container">
       <div className="row mt-5 p-5 text-center">
         <div className="col-md-12">
           <h1>
-            Firstly, Buy Me A Coffee <FreeBreakfastIcon /> , HERE
+            Firstly, Buy Me A Coffee
+            <FreeBreakfastIcon sx={{ fontSize: "5vh" }} /> , <span>HERE</span>
           </h1>
         </div>
         <div className="col-md-12 mt-2">
@@ -22,25 +25,60 @@ const Contact = () => {
         </div>
       </div>
       <div className="col-md-12 text-center">
-        <h2>Interested?</h2>
+        <h2>!nterested?</h2>
       </div>
-      <div className="row " id="contact_card">
+      <div className="row text-center" id="contact_card">
         <div className="col-md-12 text-center">
-          <h1>Get In touch!</h1>
+          <h2>Get In touch!</h2>
         </div>
         <div className="col-md-12">
           <h1>
-            Write a mail to <MailIcon />
+            Write a mail to
+            <span>
+              <Button sx={{ color: "white" }}>
+                <a
+                  href="dhimanmukul307@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <MailIcon sx={{ fontSize: "5vh" }} />
+                </a>
+              </Button>
+            </span>
           </h1>
         </div>
         <div className="col-md-12">
           <h1>
-            Connect with me on <LinkedInIcon />
+            Connect with me on
+            <span>
+              <Button sx={{ color: "white" }}>
+                {" "}
+                <a
+                  href="https://www.linkedin.com/in/mukuldhiman03/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <LinkedInIcon sx={{ fontSize: "5vh" }} />
+                </a>
+              </Button>
+            </span>
           </h1>
         </div>
         <div className="col-md-12">
           <h1>
-            Give me a star on <GitHubIcon />
+            Give me a star on{" "}
+            <span>
+              <Button sx={{ color: "white" }}>
+                {" "}
+                <a
+                  href="https://github.com/MukulDhiman03"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <GitHubIcon sx={{ fontSize: "5vh" }} />
+                </a>
+              </Button>
+            </span>
           </h1>
         </div>
       </div>

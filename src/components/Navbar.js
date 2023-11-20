@@ -1,15 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Home from "./Home";
 const Navbar = () => {
   return (
     <div className="container">
       <div className="row d-flex justify-content-center align-items-center">
-        <div className="col-5 mt-3" id="logo">
+        <div className="col-lg-5 col-sm-12 mt-3" id="logo">
           <p>Mukul Dhiman</p>
         </div>
-        <div className="col-5 mt-3">
+        <div className="col-lg-5 col-sm-12 mt-3">
           <ul className="nav_links">
             <li>
               <Link to="/" className="your-link-class">

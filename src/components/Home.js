@@ -19,10 +19,10 @@ const Home = () => {
   return (
     <div className="conatiner" id="home_container">
       <div className="row d-flex justify-content-center">
-        <div className="col-md-3 vertical-line">
+        <div className="col-md-1 vertical-line" id="left">
           <div></div>
         </div>
-        <div className="col-md-5 p-3">
+        <div className="col-md-5 p-3" id="right">
           <h1 className="mt-4">
             Hi , I'm <span>Mukul</span>
           </h1>
@@ -37,11 +37,7 @@ const Home = () => {
           <h1>
             Technology I Work On ,<span> {techList[index]}</span>
           </h1>
-          <small>
-            Yes ,I'm also Passionate about <span>HACKING</span> and exploring
-            the world of
-            <span> CYBERSECURITY.</span>
-          </small>
+          <small></small>
         </div>
       </div>
     </div>

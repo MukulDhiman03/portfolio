@@ -7,9 +7,6 @@ const About = () => {
         <div className="col-12 ">
           <h1>Me, My, Myself</h1>
         </div>
-        <div className="col-12">
-          <h2>About</h2>
-        </div>
         <div className="col-12 text-center">
           <p>
             I am an software developer with expertise in JavaScript, React,
@@ -29,8 +26,9 @@ const About = () => {
             boards from NVIDIA.
           </p>
           <p>
-            One notable achievement I take pride in is my research paper that
-            has been published in the IEEE based on <span>Blockchain</span>.
+            One notable achievement I take pride in is my{" "}
+            <span>Research paper</span> that has been published in the IEEE
+            based on <span>Blockchain</span>.
           </p>
         </div>
       </div>

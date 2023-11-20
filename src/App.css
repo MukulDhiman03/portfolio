@@ -5,20 +5,15 @@
     padding: 0px;
     margin: 0px;
     font-family: Agbalumo;
+    /* overflow-x: hidden; */
 }
-
-
 
 /* CSS FOR APP */
-
-#body {
-    height: 100vh;
-}
 
 #container {
     background-color: #22303C;
     color: white;
-    height: 100vh;
+    min-height: 100vh
 }
 
 /* CSS FOR NAVBAR */
@@ -54,11 +49,52 @@
     width: 0;
 }
 
-
 .your-link-class:hover::after {
     width: 100%;
     height: 2%;
 }
+
+@media only screen and (max-device-width: 1380px) {
+    #logo p {
+        font-size: 2rem;
+    }
+
+    .nav_links {
+        margin: 2px;
+    }
+}
+
+@media only screen and (max-device-width: 680px) {
+    #logo p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    #logo p {
+        text-align: center;
+    }
+
+    .your-link-class {
+        font-size: 1rem;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        font-family: Agbalumo;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* CSS FOR HOME */
 
@@ -76,11 +112,10 @@
 }
 
 .vertical-line {
-    border-radius: 15px;
+    /* border-radius: 15px; */
     /* background-color: #a339d7; */
     /* border: 2px solid white; */
-    height: 30vh;
-    width: 2.27%;
+    /* height: 30vh; */
 }
 
 .vertical-line div {
@@ -105,15 +140,50 @@
     }
 }
 
+@media only screen and (max-device-width: 350px) {
+    #home_container h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-device-width: 500px) {
+    #right {
+        margin-left: 10vw;
+    }
+
+    @keyframes moveDown {
+        from {
+            top: 0px;
+
+        }
+
+        to {
+            top: 200px;
+        }
+    }
+
+    .vertical-line div {
+        animation: moveDown 1.75s ease-in-out infinite;
+    }
+}
+
+@media only screen and (max-device-width: 1250px) {
+    #home_container h1 {
+        font-size: 3rem;
+    }
+}
+
+
+
 /* About css */
 #about_container h1 {
     text-transform: uppercase;
     font-weight: bolder;
     /* font-family: Agbalumo; */
+    color: yellow;
 }
 
 #about_container h2 {
-    color: yellow;
     text-transform: uppercase;
     font-weight: bolder;
     font-family: Agbalumo;
@@ -127,6 +197,13 @@
     color: #c471ed;
 }
 
+@media only screen and (max-device-width: 850px) {
+    #about_container p {
+        font-size: 1.5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
 
 /* Conatct page css */
 #contact_card {
@@ -136,8 +213,59 @@
     /* border: 2px solid red; */
     width: 25vw;
     height: 30vh;
+    padding: 4px;
+    background-color: #1a535c;
+
 }
+
+#contact_card h2 {
+    color: yellow;
+}
+
+
 
 #contact_container p {
     font-size: 2rem;
+}
+
+#contact_container span {
+    color: #c471ed;
+}
+
+
+@media only screen and (max-device-width: 850px) {
+    #contact_container h1 {
+        font-size: 1.8rem;
+
+    }
+
+    #contact_container p {
+        font-size: 1.2rem;
+    }
+
+    #contact_card {
+        width: auto;
+    }
+
+    #contact_card h2,
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+/* project css */
+
+#project_card a {
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+@media only screen and (max-device-width: 1250px) {
+    #project_container h3 {
+        font-size: 1.5rem;
+
+    }
+
 }
